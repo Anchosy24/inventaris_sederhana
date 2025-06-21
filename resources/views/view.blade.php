@@ -87,9 +87,7 @@
     <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
-            $('#tabel').DataTable({
-                ordering: false,
-            });
+            $('#tabel').DataTable();
         });
 
         function confirmDelete(event) {

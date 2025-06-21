@@ -30,7 +30,7 @@ class ProdukController extends Controller
         $globalValidator = Validator::make($request->all(), $globalValidatorData);
 
         if ($globalValidator->fails()) {
-            return redirect()->back()->with('error', 'Terdapat ID produk yang Sama dalam data!!!')->withInput();
+            return redirect()->back()->with('error', 'Terdapat ID produk yang Sama dalam data atau belum ada data yang dimasukkan pada form!!!')->withInput();
         }
 
         $data = $request->all();

@@ -93,6 +93,8 @@
                         <th>Deskripsi</th>
                         <th>Harga</th>
                         <th>Stok</th>
+                        <th>Tanggal dibuat</th>
+                        <th>Tanggal diperbarui</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -103,6 +105,8 @@
                         <td>{{ $row->deskripsi }}</td>
                         <td>Rp. {{ number_format($row->harga, 0, ',', '.') }}</td>
                         <td>{{ $row->stok }}</td>
+                        <td>{{ $row->created_at }}</td>
+                        <td>{{ $row->updated_at }}</td>
                     </tr>
                     @endforeach
                 </tbody>
@@ -119,6 +123,8 @@
                         <th>Deskripsi</th>
                         <th>Harga</th>
                         <th>Stok</th>
+                        <th>Tanggal dibuat</th>
+                        <th>Tanggal diperbarui</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -129,6 +135,8 @@
                         <td>{{ $row->deskripsi }}</td>
                         <td>Rp. {{ number_format($row->harga, 0, ',', '.') }}</td>
                         <td>{{ $row->stok }}</td>
+                        <td>{{ $row->created_at }}</td>
+                        <td>{{ $row->updated_at }}</td>
                     </tr>
                     @endforeach
                 </tbody>
